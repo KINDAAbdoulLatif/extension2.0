@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "My React Boilerplate",
+    "description": "A simple boilerplate for React projects",
+    "version": "1.0.0",
+    "background": {
+        "service_worker": "service-worker.js",
+        "type": "module"
+    },
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://*/*"
+    ],
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}

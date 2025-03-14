@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Enregistreur Audio React",
+    "version": "1.0",
+    "description": "Une extension qui permet d'enregistrer l'audio via un bouton",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "icon.png"
+    },
+    "host_permissions": [
+    "<all_urls>"
+  ],
+    "permissions": [
+      "activeTab",
+      "storage",
+      "tabCapture"
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+  }
